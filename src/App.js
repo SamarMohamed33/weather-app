@@ -7,7 +7,7 @@ import Days from "./Components/Days";
 function App() {
   const [data, setData] = useState("");
   const [location, setLocation] = useState("cairo");
-  const url = `http://api.weatherapi.com/v1/forecast.json?key=896ecf7b23954f45b7e140923231101&q=${location}&days=5&aqi=no&alerts=no
+  const url = `https://api.weatherapi.com/v1/forecast.json?key=896ecf7b23954f45b7e140923231101&q=${location}&days=5&aqi=no&alerts=no
   `;
   useEffect(() => {
     axios
