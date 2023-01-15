@@ -28,10 +28,10 @@ function App() {
     });
   }
   return (
-    <div className="App vh-100 d-flex align-items-center justify-content-center">
-      <div className="container d-grid rounded-2">
-        <div className="row ">
-          <div className="w-100 mx-auto align-self-center  text-center">
+    <div className="App h-100 d-flex align-items-center justify-content-center">
+      <div className="container mh-100 d-grid rounded-2">
+        <div className="row mx-0">
+          <div className="w-100 mx-auto align-self-center text-center ">
             <input
               type="text"
               className="rounded-2 w-75 form-control d-inline"
@@ -50,11 +50,11 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="row  row-col-1 row-cols-lg-3 text-center align-items-center border-bottom mb-3">
+        <div className="row  row-col-1 row-cols-lg-3 text-center align-items-center border-bottom mb-3 mx-0">
           <CurrentDay {...data} />
         </div>
 
-        <div className="row row-cols-5 description text-center fs-4">
+        <div className="row row-cols-1 row-cols-sm-5 text-center fs-4 mx-0">
           <Days {...data} />
         </div>
       </div>

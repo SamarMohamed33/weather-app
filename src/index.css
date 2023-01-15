@@ -1,6 +1,8 @@
+html {
+  height: 100%;
+}
 body {
-  margin: 0;
-  padding: 0;
+  height: 100%;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8,13 +10,17 @@ body {
   background-image: url(./assets/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .container {
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.3);
-  height: 90vh;
+  min-height: 90%;
   color: white;
+  padding: 20px 0;
+  height: fit-content;
+  margin: 20px 0;
 }
 .temp {
   font-size: 6rem;

@@ -4,7 +4,7 @@ function CurrentDay({ current, location, forecast }) {
   return (
     <>
       <div>
-        <div className="display-6">
+        <div className="mt-2 display-4">
           <i className="bi bi-geo-alt-fill"></i>
           {location ? " " + location.name + ", " : ""}
           {location ? location.country : ""}
@@ -19,7 +19,9 @@ function CurrentDay({ current, location, forecast }) {
         </div>
         <div>{current ? current.condition.text : ""}</div>
       </div>
-      <div className="temp">{current ? current.temp_c + "°" : ""}</div>
+      <div className=" display-1 my-2">
+        {current ? current.temp_c + "°" : ""}
+      </div>
       <div className="d-flex flex-row justify-content-around flex-lg-column">
         <div>
           <i className="bi bi-thermometer-half me-2"></i>
