@@ -6,10 +6,10 @@ function Days({ forecast }) {
       {forecast
         ? forecast.forecastday.map((day) => (
             <div
-              className="day d-flex flex-row flex-sm-column align-items-center justify-content-around"
+              className="day d-flex flex-row flex-sm-column align-items-center justify-content-around "
               key={day.date}
             >
-              <p>{dateFormat(day.date, "dddd").slice(0, 3)}</p>
+              <p>{dateFormat(day.date, "dddd")}</p>
               <p className="fs-6 m-0 d-none d-sm-block">
                 {day.day.condition.text}
               </p>

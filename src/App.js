@@ -54,7 +54,7 @@ function App() {
           <CurrentDay {...data} />
         </div>
 
-        <div className="row row-cols-1 row-cols-sm-5 text-center fs-4 mx-0">
+        <div className="row row-cols-1 row-cols-sm-3 text-center fs-4 mx-0">
           <Days {...data} />
         </div>
       </div>
