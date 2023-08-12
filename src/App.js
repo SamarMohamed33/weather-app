@@ -48,7 +48,6 @@ function App() {
               onClick={Search}
             >
               <BiSearch />
-              {/* <i className="bi bi-search"></i> */}
             </button>
           </div>
         </div>
