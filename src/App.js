@@ -3,6 +3,7 @@ import axios from "axios";
 import CurrentDay from "./Components/CurrentDay";
 import "./index.css";
 import Days from "./Components/Days";
+import { BiSearch } from "react-icons/bi";
 
 function App() {
   const [data, setData] = useState("");
@@ -46,7 +47,8 @@ function App() {
               className="btn btn-dark ms-3 mb-1"
               onClick={Search}
             >
-              <i className="bi bi-search"></i>
+              <BiSearch />
+              {/* <i className="bi bi-search"></i> */}
             </button>
           </div>
         </div>
